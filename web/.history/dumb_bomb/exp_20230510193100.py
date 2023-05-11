@@ -1,4 +1,4 @@
-# 炸弹指的是压缩包炸弹, 但是会返回br结果, 如果直接爬取会出问题
+# 炸弹指的是gzip炸弹, 但是会返回br结果, 如果直接爬取会出问题
 # 反爬手段: 1. 限制同ip访问频率(访问间隔是否固定, 30秒内是否超过10次) 2. 检测ua 3. 检测cookie
 # 反制手段: 1. 慢慢爬/ip池 2. 使用浏览器ua 3. 使用requests.Session
 
@@ -50,20 +50,13 @@ def craw_one(url: str, sess: requests.Session):
   # 这个节点坏掉了, 再发一次包(clash会自动换节点)
   if res.status_code==502:
     return craw_one(url, sess)
-  #如果不是404, 返回True
   return res.status_code!=404
 
-#初始化一个进度条
 progress_bar: tqdm
-#爬取list内的所有path
 def craw(paths: list[str]):
-  #把外面的进度条拿进来
   global progress_bar
-  #初始化一个session
   sess = init_session()
-  #遍历每一个path
   for path in paths:
-    #如果爬取失败, 重试
     while True:
       try:
         if craw_one(URL+path, sess):
@@ -72,22 +65,15 @@ def craw(paths: list[str]):
       except requests.exceptions.ConnectionError:
         pass
       except SessionWrong:
-        #如果session坏了, 重新初始化
         sess = init_session()
     
-    #进度条++
     progress_bar.update()
-    #随机延时5秒左右
     sleep(rd()*10)
 
 if __name__=='__main__':
-  #读取字典
   dic = get_dict()
-  #初始化进度条
   progress_bar = tqdm(range(len(dic)))
-  #开80个线程(因为我有130个节点)
   pool = ThreadPoolExecutor(80)
-  #按照20个一组, 分组爬取
   [f.result()
    for f in [pool.submit(craw, dic[i:i+20]) 
              for i in range(0, len(dic), 20)]]

@@ -1,4 +1,4 @@
-# 炸弹指的是压缩包炸弹, 但是会返回br结果, 如果直接爬取会出问题
+# 炸弹指的是gzip炸弹, 但是会返回br结果, 如果直接爬取会出问题
 # 反爬手段: 1. 限制同ip访问频率(访问间隔是否固定, 30秒内是否超过10次) 2. 检测ua 3. 检测cookie
 # 反制手段: 1. 慢慢爬/ip池 2. 使用浏览器ua 3. 使用requests.Session
 
@@ -87,7 +87,6 @@ if __name__=='__main__':
   progress_bar = tqdm(range(len(dic)))
   #开80个线程(因为我有130个节点)
   pool = ThreadPoolExecutor(80)
-  #按照20个一组, 分组爬取
   [f.result()
    for f in [pool.submit(craw, dic[i:i+20]) 
              for i in range(0, len(dic), 20)]]
