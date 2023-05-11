@@ -1,0 +1,15 @@
+version: "3"
+services:
+  app:
+    build: .
+    ports:
+      - "20021:8080" # 映射端口到宿主机 宿主机端口:容器端口
+    network_mode: bridge
+    tty: true
+    # environment:
+    #   - flag=flag{test_flag}
+    # command: 
+    #   - /bin/bash
+    #   - -c 
+    #   - |
+    #       cd /app && python run.py

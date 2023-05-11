@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+.anticon {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.anticon > * {
+  line-height: 1;
+}
+
+.anticon svg {
+  display: inline-block;
+}
+
+.anticon::before {
+  display: none;
+}
+
+.anticon .anticon-icon {
+  display: block;
+}
+
+.anticon[tabindex] {
+  cursor: pointer;
+}
+
+.anticon-spin::before,
+.anticon-spin {
+  display: inline-block;
+  -webkit-animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
+}
+
+@-webkit-keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+</style><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="description" content="东华大学R00TCTF新生赛是以信息安全相关知识能力为主的综合竞赛活动，比赛目的是普及网络与信息安全相关知识，并选拔部分优秀同学加入到东华大学 CTF 战队。"><link rel="canonical" href="https://r00team.cc/"><link rel="icon" href="http://121.5.48.11:8080/favicon.png"><title>R0v0T CTF</title><link href="./index_files/main.a2cecbaa.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div><div class="header-container"><div class="header"><div class="header-logo"><span class="clickable"><img src="./index_files/r00tCTF{W51C0me_t0_R00T!!}.jpg" alt="" class="game-logo">R0v0T CTF</span></div><div class="header-nav"><ul class="ant-menu-overflow ant-menu ant-menu-root ant-menu-horizontal ant-menu-dark" role="menu" tabindex="0" data-menu-list="true"><li class="ant-menu-overflow-item ant-menu-item" role="menuitem" tabindex="-1" style="opacity: 1; order: 0;" data-menu-id="rc-menu-uuid-50160-1-/board"><span class="ant-menu-title-content"><span role="img" aria-label="crown" class="anticon anticon-crown"><svg viewBox="64 64 896 896" focusable="false" data-icon="crown" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M899.6 276.5L705 396.4 518.4 147.5a8.06 8.06 0 00-12.9 0L319 396.4 124.3 276.5c-5.7-3.5-13.1 1.2-12.2 7.9L188.5 865c1.1 7.9 7.9 14 16 14h615.1c8 0 14.9-6 15.9-14l76.4-580.6c.8-6.7-6.5-11.4-12.3-7.9zm-126 534.1H250.3l-53.8-409.4 139.8 86.1L512 252.9l175.7 234.4 139.8-86.1-53.9 409.4zM512 509c-62.1 0-112.6 50.5-112.6 112.6S449.9 734.2 512 734.2s112.6-50.5 112.6-112.6S574.1 509 512 509zm0 160.9c-26.6 0-48.2-21.6-48.2-48.3 0-26.6 21.6-48.3 48.2-48.3s48.2 21.6 48.2 48.3c0 26.6-21.6 48.3-48.2 48.3z"></path></svg></span> 排行榜</span></li><li class="ant-menu-overflow-item ant-menu-item" role="menuitem" tabindex="-1" style="opacity: 1; order: 1;" data-menu-id="rc-menu-uuid-50160-1-/info"><span class="ant-menu-title-content"><span role="img" aria-label="notification" class="anticon anticon-notification"><svg viewBox="64 64 896 896" focusable="false" data-icon="notification" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 112c-3.8 0-7.7.7-11.6 2.3L292 345.9H128c-8.8 0-16 7.4-16 16.6v299c0 9.2 7.2 16.6 16 16.6h101.7c-3.7 11.6-5.7 23.9-5.7 36.4 0 65.9 53.8 119.5 120 119.5 55.4 0 102.1-37.6 115.9-88.4l408.6 164.2c3.9 1.5 7.8 2.3 11.6 2.3 16.9 0 32-14.2 32-33.2V145.2C912 126.2 897 112 880 112zM344 762.3c-26.5 0-48-21.4-48-47.8 0-11.2 3.9-21.9 11-30.4l84.9 34.1c-2 24.6-22.7 44.1-47.9 44.1zm496 58.4L318.8 611.3l-12.9-5.2H184V417.9h121.9l12.9-5.2L840 203.3v617.4z"></path></svg></span> 信息</span></li><li class="ant-menu-overflow-item ant-menu-item ant-menu-item-selected" role="menuitem" tabindex="-1" style="opacity: 1; order: 2;" data-menu-id="rc-menu-uuid-50160-1-/login"><span class="ant-menu-title-content"><span role="img" aria-label="home" class="anticon anticon-home"><svg viewBox="64 64 896 896" focusable="false" data-icon="home" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 00-44.4 0L77.5 505a63.9 63.9 0 00-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0018.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"></path></svg></span> 登录</span></li><li class="ant-menu-overflow-item ant-menu-overflow-item-rest ant-menu-submenu ant-menu-submenu-horizontal ant-menu-submenu-disabled" aria-hidden="true" role="none" style="opacity: 0; height: 0px; overflow-y: hidden; order: 2147483647; pointer-events: none; position: absolute;"><div role="menuitem" class="ant-menu-submenu-title" aria-expanded="false" aria-haspopup="true" data-menu-id="rc-menu-uuid-50160-1-rc-menu-more" aria-controls="rc-menu-uuid-50160-1-rc-menu-more-popup" aria-disabled="true"><span role="img" aria-label="ellipsis" class="anticon anticon-ellipsis"><svg viewBox="64 64 896 896" focusable="false" data-icon="ellipsis" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z"></path></svg></span><i class="ant-menu-submenu-arrow"></i></div></li></ul><div aria-hidden="true" style="display: none;"></div></div></div></div><div class="main-container"><div class="slim-container"><div data-show="true" class="ant-alert ant-alert-info ant-alert-with-description" role="alert"><span role="img" aria-label="info-circle" class="anticon anticon-info-circle ant-alert-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="info-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M464 336a48 48 0 1096 0 48 48 0 10-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z"></path></svg></span><div class="ant-alert-content"><div class="ant-alert-message"><b>注意</b></div><div class="ant-alert-description"><p>请使用东华大学邮箱（学号@mail.dhu.edu.cn）注册喔~如果忘记密码请及时联系管理员！</p></div></div></div><div class="login-content"><div class="Form"><form id="normal_login" class="ant-form ant-form-horizontal login-form"><div class="ant-row ant-form-item" style="row-gap: 0px;"><div class="ant-col ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><span class="ant-input-affix-wrapper"><span class="ant-input-prefix"><span role="img" aria-label="user" class="anticon anticon-user site-form-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="user" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M858.5 763.6a374 374 0 00-80.6-119.5 375.63 375.63 0 00-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 00-80.6 119.5A371.7 371.7 0 00136 901.8a8 8 0 008 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 008-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"></path></svg></span></span><input placeholder="邮箱" type="text" id="normal_login_mail" class="ant-input" value=""></span></div></div></div></div><div class="ant-row ant-form-item" style="row-gap: 0px;"><div class="ant-col ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><span class="ant-input-affix-wrapper"><span class="ant-input-prefix"><span role="img" aria-label="lock" class="anticon anticon-lock site-form-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="lock" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM332 240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224H332V240zm460 600H232V536h560v304zM484 701v53c0 4.4 3.6 8 8 8h40c4.4 0 8-3.6 8-8v-53a48.01 48.01 0 10-56 0z"></path></svg></span></span><input type="password" placeholder="密码" id="normal_login_password" class="ant-input"></span></div></div></div></div><div class="ant-row ant-form-item" style="row-gap: 0px;"><div class="ant-col ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><button type="submit" class="ant-btn ant-btn-primary login-form-button"><span>Log in</span></button>Or <a>Register Now!</a></div></div></div></div></form></div><div class="Form" style="display: none;"><form id="normal_register" class="ant-form ant-form-horizontal login-form"><div class="ant-row ant-form-item" style="row-gap: 0px;"><div class="ant-col ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><span class="ant-input-affix-wrapper"><span class="ant-input-prefix"><span role="img" aria-label="user" class="anticon anticon-user site-form-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="user" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M858.5 763.6a374 374 0 00-80.6-119.5 375.63 375.63 0 00-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 00-80.6 119.5A371.7 371.7 0 00136 901.8a8 8 0 008 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 008-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"></path></svg></span></span><input placeholder="邮箱" type="text" id="normal_register_mail" class="ant-input" value=""></span></div></div></div></div><div class="ant-row ant-form-item" style="margin-bottom: 0px; row-gap: 0px;"><div class="ant-col ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><div class="ant-row" style="margin-left: -2px; margin-right: -2px; row-gap: 0px;"><div class="ant-col ant-col-17" style="padding-left: 2px; padding-right: 2px;"><div class="ant-row ant-form-item" style="row-gap: 0px;"><div class="ant-col ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><span class="ant-input-affix-wrapper" style="width: 100%;"><span class="ant-input-prefix"><span role="img" aria-label="mail" class="anticon anticon-mail site-form-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="mail" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0068.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"></path></svg></span></span><input type="text" id="normal_register_verify_code" class="ant-input" value=""></span></div></div></div></div></div><div class="ant-col ant-col-7" style="padding-left: 2px; padding-right: 2px;"><button placeholder="验证码" type="button" class="ant-btn" style="width: 100%;"><span>获取验证码</span></button></div></div></div></div></div></div><div class="ant-row ant-form-item" style="row-gap: 0px;"><div class="ant-col ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><span class="ant-input-affix-wrapper ant-input-password"><span class="ant-input-prefix"><span role="img" aria-label="lock" class="anticon anticon-lock site-form-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="lock" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM332 240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224H332V240zm460 600H232V536h560v304zM484 701v53c0 4.4 3.6 8 8 8h40c4.4 0 8-3.6 8-8v-53a48.01 48.01 0 10-56 0z"></path></svg></span></span><input type="password" placeholder="密码" action="click" id="normal_register_password" class="ant-input"><span class="ant-input-suffix"><span role="img" aria-label="eye-invisible" tabindex="-1" class="anticon anticon-eye-invisible ant-input-password-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="eye-invisible" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M942.2 486.2Q889.47 375.11 816.7 305l-50.88 50.88C807.31 395.53 843.45 447.4 874.7 512 791.5 684.2 673.4 766 512 766q-72.67 0-133.87-22.38L323 798.75Q408 838 512 838q288.3 0 430.2-300.3a60.29 60.29 0 000-51.5zm-63.57-320.64L836 122.88a8 8 0 00-11.32 0L715.31 232.2Q624.86 186 512 186q-288.3 0-430.2 300.3a60.3 60.3 0 000 51.5q56.69 119.4 136.5 191.41L112.48 835a8 8 0 000 11.31L155.17 889a8 8 0 0011.31 0l712.15-712.12a8 8 0 000-11.32zM149.3 512C232.6 339.8 350.7 258 512 258c54.54 0 104.13 9.36 149.12 28.39l-70.3 70.3a176 176 0 00-238.13 238.13l-83.42 83.42C223.1 637.49 183.3 582.28 149.3 512zm246.7 0a112.11 112.11 0 01146.2-106.69L401.31 546.2A112 112 0 01396 512z"></path><path d="M508 624c-3.46 0-6.87-.16-10.25-.47l-52.82 52.82a176.09 176.09 0 00227.42-227.42l-52.82 52.82c.31 3.38.47 6.79.47 10.25a111.94 111.94 0 01-112 112z"></path></svg></span></span></span></div></div></div></div><div class="ant-row ant-form-item" style="row-gap: 0px;"><div class="ant-col ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><span class="ant-input-affix-wrapper ant-input-password"><span class="ant-input-prefix"><span role="img" aria-label="lock" class="anticon anticon-lock site-form-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="lock" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM332 240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224H332V240zm460 600H232V536h560v304zM484 701v53c0 4.4 3.6 8 8 8h40c4.4 0 8-3.6 8-8v-53a48.01 48.01 0 10-56 0z"></path></svg></span></span><input type="password" placeholder="二次密码" action="click" id="normal_register_confirm_password" class="ant-input"><span class="ant-input-suffix"><span role="img" aria-label="eye-invisible" tabindex="-1" class="anticon anticon-eye-invisible ant-input-password-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="eye-invisible" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M942.2 486.2Q889.47 375.11 816.7 305l-50.88 50.88C807.31 395.53 843.45 447.4 874.7 512 791.5 684.2 673.4 766 512 766q-72.67 0-133.87-22.38L323 798.75Q408 838 512 838q288.3 0 430.2-300.3a60.29 60.29 0 000-51.5zm-63.57-320.64L836 122.88a8 8 0 00-11.32 0L715.31 232.2Q624.86 186 512 186q-288.3 0-430.2 300.3a60.3 60.3 0 000 51.5q56.69 119.4 136.5 191.41L112.48 835a8 8 0 000 11.31L155.17 889a8 8 0 0011.31 0l712.15-712.12a8 8 0 000-11.32zM149.3 512C232.6 339.8 350.7 258 512 258c54.54 0 104.13 9.36 149.12 28.39l-70.3 70.3a176 176 0 00-238.13 238.13l-83.42 83.42C223.1 637.49 183.3 582.28 149.3 512zm246.7 0a112.11 112.11 0 01146.2-106.69L401.31 546.2A112 112 0 01396 512z"></path><path d="M508 624c-3.46 0-6.87-.16-10.25-.47l-52.82 52.82a176.09 176.09 0 00227.42-227.42l-52.82 52.82c.31 3.38.47 6.79.47 10.25a111.94 111.94 0 01-112 112z"></path></svg></span></span></span></div></div></div></div><div class="ant-row ant-form-item" style="row-gap: 0px;"><div class="ant-col ant-form-item-control"><div class="ant-form-item-control-input"><div class="ant-form-item-control-input-content"><button type="submit" class="ant-btn ant-btn-primary login-form-button"><span>Register！</span></button></div></div></div></div></form></div></div></div></div><div class="footer"><p>Project <b>Guiding Star</b> by PKUGGG Team<br><a href="http://121.5.48.11:8080/#/license"><span role="img" aria-label="github" class="anticon anticon-github"><svg viewBox="64 64 896 896" focusable="false" data-icon="github" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0138.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg></span> 开放源代码</a></p></div></div></div><script src="./index_files/anticheat.js.下载"></script><div><div class="_th-container">
+    <div class="_th-click-hover _item-input">
+        x1
+    </div>
+    <div class="_th-item _item-x2">&gt;</div>
+    <div class="_th-item _item-x-2">&lt;</div>
+    <div class="_th-item _item-xx2">&gt;&gt;</div>
+    <div class="_th-item _item-xx-2">&lt;&lt;</div>
+    <div class="_th-item _item-reset">O</div>
+</div>
+<div class="_th_cover-all-show-times _th_hidden">
+    <div class="_th_times">x1</div>
+</div><style type="text/css">
+        ._th-container ._th-item {
+            margin-bottom: 3px;
+            position: relative;
+            width: 0;
+            height: 0;
+            cursor: pointer;
+            opacity: .3;
+            background-color: aquamarine;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 30px;
+            -webkit-transition: all .35s;
+            -o-transition: all .35s;
+            transition: all .35s;
+            right: 30px;
+        }
+
+        ._th-container ._th-item, ._th-container ._th-click-hover, ._th_cover-all-show-times ._th_times {
+            -webkit-box-shadow: 4px 5px 10px 6px #b2b2b2;
+            box-shadow: 4px 5px 10px 6px #b2b2b2;
+        }
+
+        ._th-container:hover ._th-item._item-x2 {
+            margin-left: 18px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px
+        }
+
+        ._th-container:hover ._th-item._item-x-2 {
+            margin-left: 17px;
+            width: 38px;
+            height: 38px;
+            line-height: 38px
+        }
+
+        ._th-container:hover ._th-item._item-xx2 {
+            width: 36px;
+            height: 36px;
+            margin-left: 16px;
+            line-height: 36px
+        }
+
+        ._th-container:hover ._th-item._item-xx-2 {
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            margin-left: 14px
+        }
+
+        ._th-container:hover ._th-item._item-reset {
+            width: 30px;
+            line-height: 30px;
+            height: 30px;
+            margin-left: 10px
+        }
+
+        ._th-click-hover {
+            position: relative;
+            -webkit-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+            height: 45px;
+            width: 45px;
+            cursor: pointer;
+            opacity: .6;
+            border-radius: 100%;
+            background-color: aquamarine;
+            text-align: center;
+            line-height: 45px;
+            right: 0
+        }
+
+        ._th-container:hover {
+            left: -5px
+        }
+
+        ._th-container {
+            font-size: 12px;
+            -webkit-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+            left: -30px;
+            top: 10%;
+            position: fixed;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            z-index: 100000;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            display: flex;
+            width: 58px;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                    flex-direction: row;
+        }
+
+        ._th-container ._th-item:hover {
+            opacity: .8;
+            background-color: #5fb492;
+            color: aliceblue
+        }
+
+        ._th-container ._th-item:active {
+            opacity: .9;
+            background-color: #1b3a26;
+            color: aliceblue
+        }
+
+        ._th-container:hover ._th-click-hover {
+            opacity: .8
+        }
+
+        ._th-container:hover ._th-item {
+            opacity: .6;
+            right: 0
+        }
+
+        ._th-container ._th-click-hover:hover {
+            opacity: .8;
+            background-color: #5fb492;
+            color: aliceblue
+        }
+
+        ._th_cover-all-show-times {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+            opacity: 1;
+            font-weight: 900;
+            font-size: 30px;
+            color: #4f4f4f;
+            background-color: rgba(0, 0, 0, 0.1)
+        }
+
+        ._th_cover-all-show-times._th_hidden {
+            z-index: -99999;
+            opacity: 0;
+            -webkit-transition: 1s all;
+            -o-transition: 1s all;
+            transition: 1s all
+        }
+
+        ._th_cover-all-show-times ._th_times {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: rgba(127, 255, 212, 0.51);
+            text-align: center;
+            line-height: 300px;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            margin-top: -150px;
+            margin-right: -150px
+        }
+        </style></div><script>!function(e){function r(r){for(var n,i,a=r[0],c=r[1],f=r[2],s=0,p=[];s<a.length;s++)i=a[s],Object.prototype.hasOwnProperty.call(o,i)&&o[i]&&p.push(o[i][0]),o[i]=0;for(n in c)Object.prototype.hasOwnProperty.call(c,n)&&(e[n]=c[n]);for(l&&l(r);p.length;)p.shift()();return u.push.apply(u,f||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,a=1;a<t.length;a++){var c=t[a];0!==o[c]&&(n=!1)}n&&(u.splice(r--,1),e=i(i.s=t[0]))}return e}var n={},o={1:0},u=[];function i(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,i),t.l=!0,t.exports}i.e=function(e){var r=[],t=o[e];if(0!==t)if(t)r.push(t[2]);else{var n=new Promise((function(r,n){t=o[e]=[r,n]}));r.push(t[2]=n);var u,a=document.createElement("script");a.charset="utf-8",a.timeout=120,i.nc&&a.setAttribute("nonce",i.nc),a.src=function(e){return i.p+"static/js/"+({}[e]||e)+"."+{3:"10bcd80d",4:"5ebb43fb"}[e]+".chunk.js"}(e);var c=new Error;u=function(r){a.onerror=a.onload=null,clearTimeout(f);var t=o[e];if(0!==t){if(t){var n=r&&("load"===r.type?"missing":r.type),u=r&&r.target&&r.target.src;c.message="Loading chunk "+e+" failed.\n("+n+": "+u+")",c.name="ChunkLoadError",c.type=n,c.request=u,t[1](c)}o[e]=void 0}};var f=setTimeout((function(){u({type:"timeout",target:a})}),12e4);a.onerror=a.onload=u,document.head.appendChild(a)}return Promise.all(r)},i.m=e,i.c=n,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,r){if(1&r&&(e=i(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)i.d(t,n,function(r){return e[r]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="./",i.oe=function(e){throw console.error(e),e};var a=this["webpackJsonpguiding-star-frontend"]=this["webpackJsonpguiding-star-frontend"]||[],c=a.push.bind(a);a.push=r,a=a.slice();for(var f=0;f<a.length;f++)r(a[f]);var l=c;t()}([])</script><script src="./index_files/2.634ed0a6.chunk.js.下载"></script><script src="./index_files/main.73b2cae1.chunk.js.下载"></script></body></html>
