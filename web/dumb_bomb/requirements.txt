@@ -1,0 +1,8 @@
+# pywebview
+fastapi
+uvicorn
+python-multipart
+crawlerdetect
+redis
+numpy
+aiofiles

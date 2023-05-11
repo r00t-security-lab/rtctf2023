@@ -1,0 +1,13 @@
+version: "3"
+services:
+  easyflask:
+    build: .
+    ports:
+      - "8088:8082" # 映射端口到宿主机 宿主机端口:容器端口
+    network_mode: bridge
+    tty: true
+    command: 
+      - /bin/bash
+      - -c 
+      - |
+          cd /app && python app.py
