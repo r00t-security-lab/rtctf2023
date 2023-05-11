@@ -1,0 +1,5 @@
+**/__pycache__
+sql.db
+**/amis_sdk/**
+/.history
+**/log

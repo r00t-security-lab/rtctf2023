@@ -1,0 +1,14 @@
+# pywebview
+aiosqlite
+fastapi
+SQLAlchemy
+uvicorn
+rich
+pyyaml
+httpx
+regex
+json5
+objprint
+nest_asyncio
+jinja2 
+python-multipart

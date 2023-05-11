@@ -1,0 +1,60 @@
+r00t2023{Ar01rary_file_reading_can_bring_you_more!}
+
+太好了, 真有人能做到这一步!
+既然你能读取任意文件, 那么你就可以拿到所有的源码, 然后就可以看看能不能rce!
+flag4在另一个奇怪的目录, 想必不能rce是不会知道在哪里的
+
+提示:
+这个项目的文件树
+
+/app
+├── README.md
+├── requirements.txt
+├── run.py
+├── sql.db
+└── src
+    ├── __init__.py
+    ├── app
+    │   ├── __init__.py
+    │   ├── amis_router.py
+    │   ├── main_router.py
+    │   └── mock_router.py
+    ├── conf
+    │   ├── __init__.py
+    │   ├── amis.json5
+    │   ├── amis_template.py
+    │   ├── app.json5
+    │   ├── funcs.py
+    │   ├── log.yaml
+    │   ├── main.json5
+    │   ├── mock.json5
+    │   ├── sql.json5
+    │   └── sql.json5.example
+    ├── log
+    │   ├── debug.log
+    │   ├── info.log
+    │   └── warning.log
+    ├── main_app.py
+    ├── model
+    │   ├── __init__.py
+    │   └── response.py
+    ├── sql
+    │   ├── __init__.py
+    │   ├── amis.py
+    │   ├── base.py
+    │   ├── mock.py
+    │   └── phish.py
+    ├── static
+    │   ├── money.jpg
+    │   └── upload
+    │       └── game
+    │           ├── R0v0T CTF_files
+    │           │   ├── 2.634ed0a6.chunk.js.下载
+    │           │   ├── anticheat.js.下载
+    │           │   ├── main.a2cecbaa.chunk.css
+    │           │   └── main.ce4ea00a.chunk.js.下载
+    │           └── index.html
+    └── utils
+        ├── __init__.py
+        ├── misc.py
+        └── ui.py
