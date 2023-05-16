@@ -24,9 +24,13 @@ for i in ciphertext:
 r00t2023{VENI_VIDI_VICI}
 
 voide：quipqiup秒掉，竟然有很多人卡住
+
 大致解题思路就是原文是由作者故意写的没有e的一段话，简单分析知道密文和明文都没有e可以想到藏在密钥中
+
 NFZYELOXJWVMIUBTSHKDCRQAGP
+
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
 然后就能XOUTEBYRMISFLAG··· 只需要一点点观察力和一点点英文就能发现is 和 flag
 于是...
 r00t2023{XOUTEBYRM}
