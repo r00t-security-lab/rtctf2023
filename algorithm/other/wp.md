@@ -4,6 +4,7 @@
 r00t2023{crypto_is_so_easy!}
 
 四四方方：四方密码（由于一点小big得用官网指定网站hiencode去解）
+
 cipher jkbattbmbpklal
 key1Miradonbcefghjklpstuvwxyz
 key2 Regilkabcdfhjmnopstuvwxyz
@@ -13,6 +14,7 @@ key2 Regilkabcdfhjmnopstuvwxyz
 r00t2023{lighttingspeed}
 
 神奇凯撒：变异凯撒改了第一位的偏移量
+
 ciphertext = 'o,+n+())pJ8@:OE715J@2+0c'
 j = 3
 for i in ciphertext:
