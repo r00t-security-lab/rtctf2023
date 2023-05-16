@@ -17,15 +17,13 @@ r00t2023{lighttingspeed}
 
 神奇凯撒：变异凯撒改了第一位的偏移量
 
-ciphertext = 'o,+n+())pJ8@:OE715J@2+0c'
+	ciphertext = 'o,+n+())pJ8@:OE715J@2+0c'
 
-j = 3
+	j = 3
 
-for i in ciphertext:
-
-    print(chr(ord(i) + j), end='')
-    
-    j += 1
+	for i in ciphertext:
+		print(chr(ord(i) + j), end='')
+		j += 1
     
 
 r00t2023{VENI_VIDI_VICI}
