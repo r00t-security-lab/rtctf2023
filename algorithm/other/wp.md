@@ -6,7 +6,9 @@ r00t2023{crypto_is_so_easy!}
 四四方方：四方密码（由于一点小big得用官网指定网站hiencode去解）
 
 cipher jkbattbmbpklal
+
 key1Miradonbcefghjklpstuvwxyz
+
 key2 Regilkabcdfhjmnopstuvwxyz
 
 （key分别是密勒顿和雷吉艾勒奇应该有人注意到吧~但是不关键）
@@ -16,10 +18,15 @@ r00t2023{lighttingspeed}
 神奇凯撒：变异凯撒改了第一位的偏移量
 
 ciphertext = 'o,+n+())pJ8@:OE715J@2+0c'
+
 j = 3
+
 for i in ciphertext:
+
     print(chr(ord(i) + j), end='')
+    
     j += 1
+    
 
 r00t2023{VENI_VIDI_VICI}
 
