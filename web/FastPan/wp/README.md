@@ -22,7 +22,7 @@
 
 简单的SQl盲注。后来给了Hint说flag在数据库里，所以做法是从用户名密码这个位置注入，把数据库里面的东西都注出来就好辣，下面附上盲注脚本：
 
-```
+```python
 import requests
 
 cookies = {}
