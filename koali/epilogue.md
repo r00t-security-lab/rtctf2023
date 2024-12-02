@@ -126,5 +126,5 @@ koali还在纠结要不要睡个回笼觉的时候，她手机上的QQ响了。�
 
 ---
 
-![](poster/koali0.outpaint.fixed.waifu4x.scale50.jpg)
+![](poster/koali0.2024remaster.jpg)
 
